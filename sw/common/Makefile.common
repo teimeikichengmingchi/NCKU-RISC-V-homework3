@@ -13,6 +13,6 @@ else
 ARCH    := -march=rv32im_zicsr -mabi=ilp32 $(EXTRA_CFLAGS)
 endif
 
-CFLAGS  := -O3 -Wall $(ARCH) -nostartfiles -nostdlib
+CFLAGS  := -O0 -Wall $(ARCH) -nostartfiles -nostdlib
 ASFLAGS := $(ARCH)
 LDFLAGS := -lc -lm -lgcc -lsys
